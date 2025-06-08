@@ -63,4 +63,4 @@ export class AppComponent {
     localStorage.removeItem('redBusUser')
     this.loggedUserData = undefined;
   }
-}
+};
