@@ -65,6 +65,9 @@
             },
             "development": {
               "buildTarget": "bus-booking-angular-18:build:development"
+            },
+            "options": {
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
