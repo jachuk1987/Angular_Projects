@@ -23,22 +23,22 @@
 
 //   getScehduelById(id: number) {
 //     return this.http.get<any[]>(this.apiURl + "GetBusScheduleById?id="+id)
-    
+
 //   }
 
 //   getBookedSeats(id: number) {
 //     return this.http.get<any[]>(this.apiURl + "getBookedSeats?shceduleId="+id)
-    
+
 //   }
 
 //   onRegisterUser(obj: any) {
 //     return this.http.post<any[]>(this.apiURl + "AddNewUser", obj)
-    
+
 //   }
-  
+
 //   onBooking(obj: any) {
 //     return this.http.post<any[]>(this.apiURl + "PostBusBooking", obj)
-    
+
 //   }
 
 
@@ -55,7 +55,7 @@ import { Observable } from 'rxjs';
 export class MasterService {
 
   // Use proxy URL for development
-  apiURl: string = '/api/api/BusBooking/';
+  apiURl: string = '/api/BusBooking/';
 
   constructor(private http: HttpClient) { }
 

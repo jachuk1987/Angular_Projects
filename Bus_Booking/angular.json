@@ -59,15 +59,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "buildTarget": "bus-booking-angular-18:build:production"
             },
             "development": {
               "buildTarget": "bus-booking-angular-18:build:development"
-            },
-            "options": {
-              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
