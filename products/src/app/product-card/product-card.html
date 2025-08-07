@@ -1,0 +1,8 @@
+<div class="card">
+  <img [src]="product.image" [alt]="product.title" />
+  <div class="card-content">
+    <h3>{{ product.title }}</h3>
+    <p class="description">{{ product.description | slice:0:100 }}...</p>
+    <p class="price">₹{{ product.price }}</p>
+  </div>
+</div>
