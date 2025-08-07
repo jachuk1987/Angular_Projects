@@ -10,4 +10,4 @@ import { ProductListComponent } from './components/product-list/product-list';
     <app-product-list />
   `,
 })
-export class AppComponent {}
+export class AppComponent { }

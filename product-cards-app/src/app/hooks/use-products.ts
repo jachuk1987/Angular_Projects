@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class UseProductsService {
   private API_URL = 'https://fakestoreapi.com/products';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(this.API_URL);
