@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class Master {
   
-  apiUrl: string = 'https://freeapi.gerasim.in/api/JWT'
+  apiUrl: string = 'https://freeapi.gerasim.in/api/JWT';
   constructor(private http: HttpClient) {}
 
 }
