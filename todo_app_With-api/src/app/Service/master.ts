@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class Master {
   
+  apiUrl: string = 'https://'
   constructor(private http: HttpClient) {}
-  
+
 }
