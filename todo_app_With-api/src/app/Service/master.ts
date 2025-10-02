@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class Master {
   
-  apiUrl: string = 'https://'
+  apiUrl: string = 'https://freeapi.gerasim.in'
   constructor(private http: HttpClient) {}
 
 }
