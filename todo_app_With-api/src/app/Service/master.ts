@@ -10,5 +10,7 @@ export class Master {
 
   constructor(private http: HttpClient) {}
 
-  getAllTaskList
+  getAllTaskList() {
+    
+  }
 }
