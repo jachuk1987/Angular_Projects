@@ -11,6 +11,6 @@ export class Master {
   constructor(private http: HttpClient) {}
 
   getAllTaskList() {
-    return this.http.get()
+    return this.http.get(this.apiUrl + 'GetAllTaskList')
   }
 }
