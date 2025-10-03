@@ -16,12 +16,12 @@ export class App implements OnInit {
   master = inject(Master);
 
   ngOnInit(): void {
-
+    this.loadAllTask();
   }
 
   loadAllTask() {
     this.master.getAllTaskList().subscribe((res:ApiResponseModel)=>{
-
+      this.taskList = res.data;
     })
   }
 
