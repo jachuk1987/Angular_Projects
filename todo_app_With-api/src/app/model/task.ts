@@ -1,5 +1,11 @@
-export interfae ITask {
-    itemId: number;
-    taskName: string;
-    
+// Task.ts
+export interface ITask {
+  itemId: number;
+  taskName: string;
+  taskDescription: string;
+  dueDate: Date;
+  createdOn: Date;
+  isCompleted: boolean;
+  tags: string[];
+  completedOn?: Date;
 }
