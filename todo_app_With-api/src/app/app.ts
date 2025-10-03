@@ -11,4 +11,8 @@ import { Master } from './Service/master';
 export class App {
 
   master = inject(Master);
+
+  constructor(private master: Master) {
+    
+  }
 }
