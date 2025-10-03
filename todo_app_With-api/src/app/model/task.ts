@@ -9,3 +9,8 @@ export interface ITask {
   tags: string[];
   completedOn?: Date;
 }
+
+export interface ApiResponseModel {
+  message: string;
+  result:
+}
