@@ -13,6 +13,6 @@ export class Master {
   constructor(private http: HttpClient) {}
 
   getAllTaskList(): Observable<ApiResponseModel> {
-    return this.http.get(this.apiUrl + 'GetAllTaskList');
+    return this.http.get<ApiResponseModel>(this.apiUrl + 'GetAllTaskList');
   }
 }
