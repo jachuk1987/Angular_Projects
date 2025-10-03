@@ -11,6 +11,8 @@ import { ApiResponseModel, ITask } from './model/task';
 })
 export class App implements OnInit {
 
+  taskList: ITask[] = [];
+
   master = inject(Master);
 
   ngOnInit(): void {
@@ -19,7 +21,7 @@ export class App implements OnInit {
 
   loadAllTask() {
     this.master.getAllTaskList().subscribe((res:ApiResponseModel)=>{
-      
+
     })
   }
 
