@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Master } from './Service/master';
 
@@ -8,10 +8,12 @@ import { Master } from './Service/master';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {
+export class App implements OnInit{
 
   master = inject(Master);
 
-    
+    ngOnInit(): void {
+      
+    }
   
 }
