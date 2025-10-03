@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Master } from './Service/master';
-import { ITask } from './model/task';
+import { ApiResponseModel, ITask } from './model/task';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +18,9 @@ export class App implements OnInit {
   }
 
   loadAllTask() {
-    this.master.getAllTaskList().subscribe((res:ITask))
+    this.master.getAllTaskList().subscribe((res:ApiResponseModel)=>{
+      
+    })
   }
 
 }
