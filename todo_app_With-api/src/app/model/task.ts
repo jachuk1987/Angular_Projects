@@ -12,5 +12,6 @@ export interface ITask {
 
 export interface ApiResponseModel {
   message: string;
-  result:
+  result: string;
+  date: any;
 }
