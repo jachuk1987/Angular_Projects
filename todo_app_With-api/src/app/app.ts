@@ -21,7 +21,7 @@ export class App implements OnInit {
 
   loadAllTask() {
     this.master.getAllTaskList().subscribe((res:ApiResponseModel)=>{
-      this.taskList = res.data;
+      this.taskList = res.date;
     })
   }
 
